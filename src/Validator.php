@@ -27,8 +27,8 @@ final class Validator
         $definitions = [
             'expression_start' => substr($expression, 0, $part),
             'expression_end' => substr($expression, -$part),
-            'wrap_start' => substr($expression, 0, $part),
-            'wrap_end' => substr($expression, -$part)
+            'wrap_start' => substr($wrap, 0, $part),
+            'wrap_end' => substr($wrap, -$part)
         ];
 
         $cleanExpression = trim(
